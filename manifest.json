@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "URL Checker",
+  "version": "1.0",
+  "description": "Checks for the '@' character in the URL and warns the user.",
+  "icons": {
+    "48": "icons/warning.png"
+  },
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": [
+    "warning.html"
+  ]
+}
